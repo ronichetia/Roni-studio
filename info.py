@@ -85,13 +85,13 @@ UPDATE_CHNL_LNK = environ.get('UPDATE_CHNL_LNK', 'https://t.me/kdramatalkies')
 # 3. DATABASE CONFIGURATION (MongoDB)
 # ==============================================================================
 # Primary MongoDB Connection URI & Database details
-DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://autoanimedb:joseph123@cluster0.goovppg.mongodb.net/?appName=Cluster0')
+DATABASE_URI = environ.get('DATABASE_URI', 'mongodb+srv://bellafind93_db_user:ronipop123@cluster0.kpkanfm.mongodb.net/')
 DATABASE_NAME = environ.get('DATABASE_NAME', 'Cluster0')
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
 # Secondary MongoDB for multiple DB load balancing
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), True)
-DATABASE_URI2 = environ.get('DATABASE_URI2', 'mongodb+srv://bellafind93_db_user:ronipop123@cluster0.kpkanfm.mongodb.net/')
+DATABASE_URI2 = environ.get('DATABASE_URI2', 'mongodb+srv://autoanimedb:joseph123@cluster0.goovppg.mongodb.net/?appName=Cluster0')
 
 # Fallback to primary database if multiple DB mode is disabled
 if not MULTIPLE_DB:
