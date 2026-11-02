@@ -90,7 +90,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', 'Cluster0')
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dreamcinezone_files')
 
 # Secondary MongoDB for multiple DB load balancing
-MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), True)
+MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False)
 DATABASE_URI2 = environ.get('DATABASE_URI2', 'mongodb+srv://autoanimedb:joseph123@cluster0.goovppg.mongodb.net/?appName=Cluster0')
 
 # Fallback to primary database if multiple DB mode is disabled
