@@ -32,7 +32,7 @@ API_ID = int(environ.get('API_ID', '37988924'))
 API_HASH = environ.get('API_HASH', 'fccc55f248cf1739f6cf120d3e244561')
 
 # Bot token obtained from @BotFather
-BOT_TOKEN = environ.get('BOT_TOKEN', '8613715629:AAHUt_vYO1DIaCrs25OmOUtsfU7il3EdwJM')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8901649929:AAE4aHQH4TddfBFIiDHGIuqiJyXgWvUrAIk')
 
 # Pyrogram session name
 SESSION = environ.get('SESSION', 'dreamxbotz_search')
@@ -58,7 +58,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # Support Group & Request Channel
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1004499747599')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/talkies_flix')
 
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1004351735718')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
@@ -225,7 +225,7 @@ THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))   # 15 hours
 # ==============================================================================
 # 8. PREMIUM PLANS & PAYMENT CONFIGURATION
 # ==============================================================================
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg')
+QR_CODE = environ.get('QR_CODE', 'https://graph')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'ɴᴏ ᴀᴠᴀɪʟᴀʙʟᴇ ʀɪɢʜᴛ ɴᴏᴡ')
 
 # Stars / Premium Pricing Structure {Amount: "Duration"}
